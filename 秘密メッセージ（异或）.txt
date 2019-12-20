@@ -1,0 +1,16 @@
+#加密
+key='1'
+message=input('Input a message')
+ml=len(message)   
+kl=len(key)
+key=ml//kl*key  
+pwd=[]          
+for i in range(len(key)):
+ pwd.append(chr(ord(key[i])^ord(message[i])))
+print(''.join(pwd))
+#解密
+result=[]
+for j in range(len(key)):
+    result.append(chr(ord(pwd[j])^ord(key[j]))) 
+result=''.join(result)
+print(result)
