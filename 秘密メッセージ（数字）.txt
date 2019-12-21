@@ -1,0 +1,41 @@
+#1
+dict1={'0': 'お', '1': 'は', '2': 'よ', '3': 'う','4': 'ご', 
+       '5': 'ざ', '6': 'い', '7': 'ま', '8': 'す', '9': '！'}
+zifuchuang1=[]
+zifuchuang2=[]
+for i in range(10):
+    a=input()
+    if(a==''):
+        break
+    zifuchuang1.append(a)
+
+if(zifuchuang1[0].isdigit()):
+    for i in zifuchuang1:
+        zifuchuang2.append(dict1.get(i))
+else:
+    for i in zifuchuang1:
+        for key, val in dict1.items():
+            if val==i:
+                zifuchuang2.append(key)
+print("".join(zifuchuang2))
+
+#2
+dict1={'0': 'お', '1': 'は', '2': 'よ', '3': 'う','4': 'ご', 
+       '5': 'ざ', '6': 'い', '7': 'ま', '8': 'す', '9': '！'}
+zifuchuang1=[]
+zifuchuang2=[]
+for i in range(10):
+    a=input()
+    if(a==''):
+        break
+    zifuchuang1.append(a)
+
+if(zifuchuang1[0].isdigit()):
+    for i in zifuchuang1:
+        zifuchuang2.append(dict1.get(i))
+else:
+    for i in zifuchuang1:
+        for key, val in dict1.items():
+            if val==i:
+                zifuchuang2.append(key)
+print("".join(zifuchuang2))
